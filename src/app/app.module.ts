@@ -16,13 +16,16 @@ import { ProductsPage } from '../pages/products/products';
 import { ProductDetailPage } from '../pages/product-detail/product-detail';
 import { ProductServiceProvider } from '../providers/product-service/product-service';
 
+import { ActiveOrdersPage } from '../pages/active-orders/active-orders';
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     AutorPage,
     ProductsPage,
-    ProductDetailPage
+    ProductDetailPage,
+    ActiveOrdersPage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { ProductServiceProvider } from '../providers/product-service/product-ser
     HomePage,
     AutorPage,
     ProductsPage,
-    ProductDetailPage
+    ProductDetailPage,
+    ActiveOrdersPage
   ],
   providers: [
     StatusBar,

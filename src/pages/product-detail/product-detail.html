@@ -11,6 +11,13 @@
 </ion-header>
 
 <ion-content>
+  
+  
+  
+  
+
+  
+
   <ion-card>
     <img src="../../assets/imgs/{{pet.img}}"/>
     <ion-card-content>
@@ -21,7 +28,16 @@
       <p>Descripcion: {{ pet.description}}</p>
     </ion-card-content>
   </ion-card>
-  <button ion-button block>
-      <ion-icon name="cart" item-start></ion-icon>&nbsp; Agregar a carrito
-  </button>
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <div>
+        <button ion-button block round class="btn-green">
+          <ion-icon name="cart" item-start></ion-icon>&nbsp; Agregar a carrito
+        </button>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
 </ion-content>

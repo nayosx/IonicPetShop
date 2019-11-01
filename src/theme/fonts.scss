@@ -1,4 +1,5 @@
 $primary-color: #004643;
+$green2: #15bbad;
 $green: #adce49;
 $red: #f3726d;
 @font-face {
@@ -45,4 +46,8 @@ $red: #f3726d;
     font-family: 'Kreon';
     font-weight: 600;
     color: $primary-color;
+  }
+  .btn-green {
+    background: $green2;
+    color: #ffffff;
   }
