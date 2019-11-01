@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { AutorPage } from '../pages/autor/autor';
 import { ProductsPage } from '../pages/products/products';
 import { ActiveOrdersPage } from '../pages/active-orders/active-orders';
+import { AboutAppPage } from '../pages/about-app/about-app';
 
 @Component({
   templateUrl: 'app.html'
@@ -26,7 +27,8 @@ export class MyApp {
       { title: 'Inicio', component: HomePage },
       { title: 'Productos', component: ProductsPage },
       { title: 'Ordenes activas', component: ActiveOrdersPage },
-      { title: 'Autor',component: AutorPage }
+      { title: 'Autor',component: AutorPage },
+      { title: 'Acerca de', component: AboutAppPage }
     ];
 
   }

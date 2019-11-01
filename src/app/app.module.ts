@@ -8,7 +8,6 @@ import { HomePage } from '../pages/home/home';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { PetsServiceProvider } from '../providers/pets-service/pets-service';
 import { AutorPage } from '../pages/autor/autor';
 import { AutorServiceProvider } from '../providers/autor-service/autor-service';
 
@@ -17,6 +16,7 @@ import { ProductDetailPage } from '../pages/product-detail/product-detail';
 import { ProductServiceProvider } from '../providers/product-service/product-service';
 
 import { ActiveOrdersPage } from '../pages/active-orders/active-orders';
+import { AboutAppPage } from '../pages/about-app/about-app'; 
 
 @NgModule({
   declarations: [
@@ -25,7 +25,8 @@ import { ActiveOrdersPage } from '../pages/active-orders/active-orders';
     AutorPage,
     ProductsPage,
     ProductDetailPage,
-    ActiveOrdersPage
+    ActiveOrdersPage,
+    AboutAppPage
   ],
   imports: [
     BrowserModule,
@@ -38,13 +39,13 @@ import { ActiveOrdersPage } from '../pages/active-orders/active-orders';
     AutorPage,
     ProductsPage,
     ProductDetailPage,
-    ActiveOrdersPage
+    ActiveOrdersPage,
+    AboutAppPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    PetsServiceProvider,
     AutorServiceProvider,
     ProductServiceProvider
   ]
