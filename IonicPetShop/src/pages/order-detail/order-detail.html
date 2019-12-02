@@ -1,0 +1,37 @@
+<!--
+  Generated template for the OrderDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>orderDetail</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+    <ion-card>
+      <ion-card-content>
+        <ion-card-title>
+          Orden Nº {{order.i}}
+        </ion-card-title>
+        <p><strong>{{ order.name}}</strong></p>
+        <p>Descripcion: {{ order.description}}</p>
+        <p>Total: ${{ order.price}}</p>
+        
+      </ion-card-content>
+    </ion-card>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div>
+          <button ion-button block round class="btn-green" (click)="buy($event)">
+              <ion-icon name="send"></ion-icon>&nbsp; Despachar Orden
+          </button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
