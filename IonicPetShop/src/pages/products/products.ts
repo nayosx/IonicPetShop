@@ -33,7 +33,8 @@ export class ProductsPage {
       result => {
         if(result.status) {
           let data = result.data.map(item => {
-            item.localPath = environment.API_ENDPOINT.concat('public/img/');
+            let img = item.img.split('.');
+            item.localPath = environment.BASE_URL.concat('img.php?', 'name='+ img[0], '&ext='+img[1]);
             return item;
           });
           this.pets = data;

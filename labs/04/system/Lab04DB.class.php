@@ -5,10 +5,10 @@ class Lab04DB extends QueryBuilder{
     private $_config = [];
 
     public function __construct() {
-        $this->_config[parent::HOST] = 'sql213.byethost.com';
-        $this->_config[parent::DATABASE] = 'b33_24868635_HG101513';
-        $this->_config[parent::USER] = 'b33_24868635';
-        $this->_config[parent::PASSWORD] = 'piojitalinda';
+        $this->_config[parent::HOST] = 'fdb26.awardspace.net';
+        $this->_config[parent::DATABASE] = '3244601_hg101513';
+        $this->_config[parent::USER] = '3244601_hg101513';
+        $this->_config[parent::PASSWORD] = 'HG101513,N322';
         $this->_config[parent::CHARTSET] = parent::UTF8;
         
         parent::__construct();

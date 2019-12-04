@@ -2,18 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/xampp/htdocs/labs/04/Api.php</file>
-            <file>file:/C:/xampp/htdocs/labs/04/controller/ProductController.class.php</file>
-            <file>file:/C:/xampp/htdocs/labs/04/controller/CarController.class.php</file>
-            <file>file:/C:/xampp/htdocs/labs/04/index.php</file>
-            <file>file:/C:/xampp/htdocs/labs/04/controller/UserController.class.php</file>
-            <file>file:/C:/xampp/htdocs/labs/04/model/CarModel.class.php</file>
-            <file>file:/C:/xampp/htdocs/labs/04/model/UserModel.class.php</file>
-            <file>file:/C:/xampp/htdocs/labs/04/controller/LoginController.class.php</file>
-            <file>file:/C:/xampp/htdocs/labs/04/model/AutorModel.class.php</file>
-            <file>file:/C:/xampp/htdocs/labs/04/system/Lab04DB.class.php</file>
-            <file>file:/C:/xampp/htdocs/labs/04/controller/AutorController.class.php</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

@@ -12,13 +12,6 @@ import { StorageProvider } from '../../providers/storage/storage';
 export class ProductDetailPage {
 
   public pet: any = {
-    'id': 0,
-    'name': '',
-    'img': 'logo.jpg',
-    'price': 0,
-    'description': '',
-    'localPath': environment.LOCAL_IMG + environment.DEFAULT_IMG,
-    'idUser': 0
   };
 
   constructor(
@@ -32,7 +25,6 @@ export class ProductDetailPage {
 
   ionViewDidLoad() {
     this.pet = this.navParams.get('pet');
-
     this.storage.get('idUser').then(result => {
       if (result != null) {
         this.pet.idUser = result;

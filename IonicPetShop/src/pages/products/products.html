@@ -21,7 +21,7 @@
   <ion-list>
     <ion-item *ngFor="let pet of pets" (click)="showDetailPet(pet)">
       <ion-thumbnail item-start>
-        <img src="{{pet.localPath}}{{pet.img}}">
+        <img src="{{pet.localPath}}">
       </ion-thumbnail>
       <h2>{{ pet.name }}</h2>
       <p>Precio: ${{ pet.price }}</p>

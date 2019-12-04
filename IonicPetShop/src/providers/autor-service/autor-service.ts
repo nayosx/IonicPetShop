@@ -9,7 +9,7 @@ export class AutorServiceProvider {
   constructor(public http: HttpClient) {}
 
   public getAutor() {
-    return this.http.get<any>(environment.API_ENDPOINT.concat('autor'))
+    return this.http.get<any>(environment.API_GET.concat('autor'))
     .pipe(
         map(
             response => {

@@ -11,7 +11,7 @@ export class CarServiceProvider {
   }
 
   public getOrdenes(idUser) {
-    return this.http.get<any>(environment.API_ENDPOINT.concat('car?idUser=', idUser))
+    return this.http.get<any>(environment.API_GET.concat('car?idUser=', idUser))
     .pipe(
         map(
             response => {

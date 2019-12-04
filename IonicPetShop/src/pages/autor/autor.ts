@@ -20,7 +20,7 @@ export class AutorPage {
         name: '',
         carnet: '',
         email: '',
-        localPath: environment.LOCAL_IMG
+        localPath: environment.LOCAL_IMG + 'logo.png'
       };
   }
 
@@ -28,7 +28,8 @@ export class AutorPage {
     this.autorService.getAutor().subscribe(
       result => {
         let autor = result.data;
-        autor.localPath = environment.API_ENDPOINT.concat('public/img/');
+        let img = autor.image.split('.');
+        autor.localPath = environment.BASE_URL.concat('img.php?', 'name='+ img[0], '&ext='+img[1]);
         this.aboutMe = result.data;
       },
       error => {}
